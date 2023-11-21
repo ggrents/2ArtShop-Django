@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{%load static%}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +6,7 @@
     <title>Computers</title>
   
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="static2/css/new_style.css" />
+     <link rel="stylesheet" type="text/css" href="{% static 'new_style.css' %}" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Dosis:wght@500&family=IBM+Plex+Mono&family=Play&display=swap" rel="stylesheet">
@@ -84,7 +84,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card mb-4 h-100">
-                    <img src="static2\images\pc_1.png" class="card-img-top" alt="Image 1">
+                    <img src="{% static 'pc_1.png' %}" class="card-img-top" alt="Image 1">
                     <div class="card-body">
                         <h5 class="card-title">Project 5 D31</h5>
                         <p class="card-text"> <span class="higl"> <b> 545 090 ₸ </b> </span> <br>
@@ -104,7 +104,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card mb-4 h-100">
-                    <img src="static2\images\pc_2.png" class="card-img-top" alt="Image 2">
+                    <img src="{% static 'pc_2.png' %}" class="card-img-top" alt="Image 2">
                     <div class="card-body">
                         <h5 class="card-title">Neo Game Wave</h5>
                          <p class="card-text">
@@ -126,7 +126,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card mb-4 h-100">
-                    <img src="static2\images\pc_3.png" class="card-img-top" alt="Image 3">
+                    <img src="{% static 'pc_3.png' %}" class="card-img-top" alt="Image 3">
                     <div class="card-body">
                         <h5 class="card-title">Project 5 D41</h5>
                         <p class="card-text">
@@ -152,7 +152,7 @@
             </div>
            <div class="col-md-4">
                 <div class="card mb-4 h-100">
-                    <img src="static2\images\new_pc_1.png" class="card-img-top" alt="Image 1">
+                    <img src="{% static 'new_pc_1.png' %}" class="card-img-top" alt="Image 1">
                     <div class="card-body">
                         <h5 class="card-title">Project 3 D40</h5>
                          <p class="card-text">
@@ -174,7 +174,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card mb-4 h-100">
-                    <img src="static2\images\new_pc_2.png" class="card-img-top" alt="Image 2">
+                    <img src="{% static 'new_pc_2.png' %}" class="card-img-top" alt="Image 2">
                     <div class="card-body">
                         <h5 class="card-title">Project 5 VR4</h5>
                         <p class="card-text">
@@ -196,7 +196,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card mb-4 h-100">
-                    <img src="static2\images\new_pc_3.png" class="card-img-top" alt="Image 3">
+                    <img src="{% static 'new_pc_3.png' %}" class="card-img-top" alt="Image 3">
                     <div class="card-body">
                         <h5 class="card-title">Neo Quant</h5>
                            <p class="card-text">
@@ -221,7 +221,7 @@
             </div>
           <div class="col-md-6">
                 <div class="card mb-4 h-100">
-                    <img src="static2\images\bs_pr_1.png" class="card-img-top" alt="Image 1">
+                    <img src="{% static 'bs_pr_1.png' %}" class="card-img-top" alt="Image 1">
                     <div class="card-body">
                         <h5 class="card-title">Neo Game Cosmo3</h5>
                         <p class="card-text">
@@ -243,7 +243,7 @@
             </div>
             <div class="col-md-6">
                 <div class="card mb-4 h-100">
-                    <img src="static2\images\bs_pr_2.png" class="card-img-top" alt="Image 2">
+                    <img src="{% static 'bs_pr_2.png' %}" class="card-img-top" alt="Image 2">
                     <div class="card-body">
                         <h5 class="card-title">TechnoGaming EVO</h5>
                         <p class="card-text">
