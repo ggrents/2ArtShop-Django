@@ -1,0 +1,54 @@
+.navbar-black {
+    background-color: black;
+    border-bottom:  solid 1px white;
+}
+
+.navbar-black .nav-link {
+     color: white; /* Цвет текста ссылок по умолчанию */
+     font-size: 24px;
+     margin: 10px;
+     font-family: 'IBM Plex Mono', monospace;
+}
+
+.navbar-black .nav-item.active .nav-link {
+    color: #ea4135; /* Цвет текста для активной ссылки */
+}
+
+.navbar-black .nav-item .nav-link:hover {
+    color: #ea4135; /* Здесь укажите нужный вам цвет при наведении */
+}
+
+footer {
+	border-top : solid 1px;
+}
+
+.bg-black {
+    background-color: black !important;
+
+}
+
+/* Изменение цвета текста на белый */
+.text-white {
+    color: white !important;
+}
+
+main {
+	background-color: black;
+}
+body {
+	background-color: black;
+}
+
+
+
+h2 {
+	color : #ea4135;
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	font-size: 40px
+}
+
+.higl {
+	color:red;
+}

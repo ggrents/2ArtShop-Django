@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computers</title>
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static2/css/new_style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Dosis:wght@500&family=IBM+Plex+Mono&family=Play&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+
+
+    <style>
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                color: white;
+                text-shadow: 0 0 10px white;
+            }
+            50% {
+                transform: scale(1.1);
+                color: #ea4135; 
+                text-shadow: 0 0 20px #ea4135;/
+            }
+            100% {
+                transform: scale(1);
+                color: white;
+                text-shadow: 0 0 10px white; 
+            }
+        }
+
+        #changingText {
+            text-align: center;
+            color: white;
+            animation: pulse 2s infinite; 
+        }
+    </style>
+
+
+
+</head>
+<body>
+
+ <nav class="navbar navbar-expand-lg navbar-black bg-black">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="static2\images\2art.png" id="logoimg" style="max-height: 120px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'main' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}">About</a>
+                </li>
+				<li class="nav-item active">
+    				<a class="nav-link" href="{% url 'pcs' %}">Gaming PCs</a>
+				</li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'consoles' %}">Gaming Consoles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  
+    <main class="container my-5">
+        <h1 id="changingText" style="text-align: center; color: WHITE;"></h1>
+        <div class="row">
+      
+            <div class="col-md-12">
+                <h2>POPULAR MODELS</h2>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 h-100">
+                    <img src="static2\images\pc_1.png" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 5 D31</h5>
+                        <p class="card-text"> <span class="higl"> <b> 545 090 ₸ </b> </span> <br>
+                        					Intel Core i5-13th<br>
+                                    NVIDIA GeForce RTX 4060</p>
+                    </div>
+                     <div class="card-footer">
+       <button class="btn btn-dark">Buy now</button>
+            <button class="btn btn-primary" onclick="addToCart(console1)">Add to Basket</button>
+            <button class="btn btn-Light" onclick="increaseLikes('console1')">
+    <img src="static2/images/heart.png" alt="Heart" style="width: 20px; height: 15px;">
+</button>
+
+  <span id="likeCount_console1">0</span> <span style="font-size: 12px;" id="likeText_console1">Like</span>
+        </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 h-100">
+                    <img src="static2\images\pc_2.png" class="card-img-top" alt="Image 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Neo Game Wave</h5>
+                         <p class="card-text">
+                                    <span class="higl"> <b>324 990 ₸ </b></span><br>
+                                    Intel Core i5-12th<br>
+                                    NVIDIA GeForce GTX 1650
+                                </p>
+                    </div>
+                     <div class="card-footer">
+          <button class="btn btn-dark">Buy now</button>
+            <button class="btn btn-primary" onclick="addToCart(console2)">Add to Basket</button>
+            <button class="btn btn-Light" onclick="increaseLikes('console2')">
+    <img src="static2/images/heart.png" alt="Heart" style="width: 20px; height: 15px;">
+</button>
+
+  <span id="likeCount_console2">0</span> <span style="font-size: 12px;" id="likeText_console2">Like</span>
+        </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 h-100">
+                    <img src="static2\images\pc_3.png" class="card-img-top" alt="Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 5 D41</h5>
+                        <p class="card-text">
+                                    <span class="higl"> <b>601 390 ₸ </b></span><br>
+                                    Intel Core i5-13th<br>
+                                    NVIDIA GeForce RTX 4060 Ti
+                                </p>
+                    </div>
+                     <div class="card-footer">
+           <button class="btn btn-dark">Buy now</button>
+            <button class="btn btn-primary" onclick="addToCart(console3)">Add to Basket</button>
+            <button class="btn btn-Light" onclick="increaseLikes('console3')">
+    <img src="static2/images/heart.png" alt="Heart" style="width: 20px; height: 15px;">
+</button>
+
+  <span id="likeCount_console3">0</span> <span style="font-size: 12px;" id="likeText_console3">Like</span>
+        </div>
+                </div>
+            </div>
+       
+            <div class="col-md-12">
+                <h2>NEW MODELS</h2>
+            </div>
+           <div class="col-md-4">
+                <div class="card mb-4 h-100">
+                    <img src="static2\images\new_pc_1.png" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3 D40</h5>
+                         <p class="card-text">
+                                    <span class="higl"> <b> 415 000 ₸ </b></span><br>
+                                    Intel Core i3-13th<br>
+                                    NVIDIA GeForce RTX 3050
+                                </p>
+                    </div>
+                     <div class="card-footer">
+           <button class="btn btn-dark">Buy now</button>
+            <button class="btn btn-primary" onclick="addToCart(console4)">Add to Basket</button>
+            <button class="btn btn-Light" onclick="increaseLikes('console4')">
+    <img src="static2/images/heart.png" alt="Heart" style="width: 20px; height: 15px;">
+</button>
+
+  <span id="likeCount_console4">0</span> <span style="font-size: 12px;" id="likeText_console4">Like</span>
+        </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 h-100">
+                    <img src="static2\images\new_pc_2.png" class="card-img-top" alt="Image 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 5 VR4</h5>
+                        <p class="card-text">
+                                    <span class="higl"> <b> 547 790 ₸ </b></span><br>
+                                    Intel Core i5-13th<br>
+                                    NVIDIA GeForce RTX 4060
+                                </p>
+                    </div>
+                     <div class="card-footer">
+            <button class="btn btn-dark">Buy now</button>
+            <button class="btn btn-primary" onclick="addToCart(console5)">Add to Basket</button>
+            <button class="btn btn-Light" onclick="increaseLikes('console5')">
+    <img src="static2/images/heart.png" alt="Heart" style="width: 20px; height: 15px;">
+</button>
+
+  <span id="likeCount_console5">0</span> <span style="font-size: 12px;" id="likeText_console5">Like</span>
+        </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 h-100">
+                    <img src="static2\images\new_pc_3.png" class="card-img-top" alt="Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Neo Quant</h5>
+                           <p class="card-text">
+                                    <span class="higl"><b> 319 990 ₸ </b></span><br>
+                                    Intel Core i5-12th<br>
+                                    NVIDIA GeForce GTX 1650
+                                </p>
+                    </div>
+                     <div class="card-footer">
+            <button class="btn btn-dark">Buy now</button>
+            <button class="btn btn-primary" onclick="addToCart(console6)">Add to Basket</button>
+            <button class="btn btn-Light" onclick="increaseLikes('console6')">
+    <img src="static2/images/heart.png" alt="Heart" style="width: 20px; height: 15px;">
+</button>
+
+  <span id="likeCount_console6">0</span> <span style="font-size: 12px;" id="likeText_console6">Like</span>
+        </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <h2>BEST PRICE</h2>
+            </div>
+          <div class="col-md-6">
+                <div class="card mb-4 h-100">
+                    <img src="static2\images\bs_pr_1.png" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Neo Game Cosmo3</h5>
+                        <p class="card-text">
+                                    <span class="higl"> <b>289 990 ₸ </b></span><br>
+                                    Intel Core i3-12th<br>
+                                    NVIDIA GeForce GTX 1650
+                                </p>
+                    </div>
+                     <div class="card-footer">
+          <button class="btn btn-dark">Buy now</button>
+            <button class="btn btn-primary" onclick="addToCart(console7)">Add to Basket</button>
+            <button class="btn btn-Light" onclick="increaseLikes('console7')">
+    <img src="static2/images/heart.png" alt="Heart" style="width: 20px; height: 15px;">
+</button>
+
+  <span id="likeCount_console7">0</span> <span style="font-size: 12px;" id="likeText_console7">Like</span>
+        </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4 h-100">
+                    <img src="static2\images\bs_pr_2.png" class="card-img-top" alt="Image 2">
+                    <div class="card-body">
+                        <h5 class="card-title">TechnoGaming EVO</h5>
+                        <p class="card-text">
+                                    <span class="higl"> <b> 1 200 000 ₸ </b></span><br>
+                                    Intel Core i7-12th<br>
+                                    NVIDIA GeForce RTX 3070
+                                </p>
+                    </div>
+                     <div class="card-footer">
+            <button class="btn btn-dark">Buy now</button>
+            <button class="btn btn-primary" onclick="addToCart(console8)">Add to Basket</button>
+            <button class="btn btn-Light" onclick="increaseLikes('console8')">
+    <img src="static2/images/heart.png" alt="Heart" style="width: 20px; height: 15px;">
+</button>
+
+  <span id="likeCount_console8">0</span> <span style="font-size: 12px;" id="likeText_console8">Like</span>
+        </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="cart" style="position: fixed; top: 0; right: 0; padding: 10px; background-color: #fff; border: 2px solid #ccc;">
+        <h3>Shopping Basket</h3>
+        <ul id="cartItems">
+            
+        </ul>
+        <hr>
+        <p>Total: <span id="totalPrice">0 ₸</span></p>
+         <button class="btn btn-danger" onclick="clearCart()">Clear Basket</button>
+         <button class="btn btn-success" onclick="buy()">Make a purchase</button>
+    </div>
+           
+    </main>
+
+  
+<footer class="bg-black text-white text-center py-3">
+    <div class="social-icons">
+    <a href="https://www.linkedin.com/in/artem-popov-389055290/" target="_blank" class="text-white">
+        <i class="fab fa-linkedin fa-lg"></i>
+    </a>
+    <a href="https://t.me/highashxll" target="_blank" class="text-white">
+        <i class="fab fa-telegram fa-lg"></i>
+    </a>
+    <a href="#" target="_blank" class="text-white">
+        <i class="fab fa-instagram fa-lg"></i>
+    </a>
+</div>
+<span class="home-imgHover"></span>
+    &copy; 2023 | 2Art. All rights reserved.
+</footer>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <script>
+    function increaseLikes(consoleId) {
+        var likesElement = document.getElementById('likeCount_' + consoleId);
+        var likeTextElement = document.getElementById('likeText_' + consoleId);
+
+        var currentLikes = parseInt(likesElement.innerHTML);
+        likesElement.innerHTML = currentLikes + 1;
+
+        if (currentLikes === 0) {
+            likeTextElement.innerHTML = "Like";
+        } else {
+            likeTextElement.innerHTML = "Likes";
+        }
+    }
+</script>
+
+
+<script>
+        let textElement = document.getElementById('changingText');
+        let texts = ['Easy to buy', 'Quality product', 'Fast delivery', 'Hot discounts'];
+        let currentIndex = 0;
+
+        function changeText() {
+            textElement.textContent = texts[currentIndex];
+            currentIndex = (currentIndex + 1) % texts.length;
+        }
+
+        
+        setInterval(changeText, 2000);
+    </script>
+
+    <script>
+       var shoppingCart = {
+    items: [],
+    total: 0,
+
+    buy: function() {
+        
+        this.clearCart();
+
+        
+        alert('You have successfully made a purchase!');
+    },
+
+    addItem: function(item) {
+        this.items.push(item);
+        this.calculateTotal();
+        this.updateCartUI();
+    },
+
+    calculateTotal: function() {
+        this.total = this.items.reduce((acc, item) => acc + item.price, 0);
+    },
+
+    updateCartUI: function() {
+        var cartItemsElement = document.getElementById('cartItems');
+        var totalPriceElement = document.getElementById('totalPrice');
+
+        cartItemsElement.innerHTML = "";
+        this.items.forEach(item => {
+            var li = document.createElement('li');
+            li.textContent = item.name + ": " + item.price + " ₸";
+            cartItemsElement.appendChild(li);
+        });
+
+        totalPriceElement.textContent = this.total + " ₸";
+    },
+    clearCart: function() {
+        this.items = [];
+        this.total = 0;
+        this.updateCartUI();
+    }
+
+};
+
+var console1 = {
+    name: 'Project 5 D31',
+    price: 545090
+};
+
+var console2 = {
+    name: 'Neo Game Wave',
+    price: 324990
+};
+
+var console3 = {
+    name: 'Project 5 D41',
+    price: 601390 
+};
+
+var console4 = {
+    name: 'Project 3 D40',
+    price: 415000
+};
+
+var console5 = {
+    name: 'Project 5 VR4',
+    price: 547790 
+};
+
+var console7 = {
+    name: 'Neo Game Cosmo3',
+    price: 289990
+};
+
+var console8 = {
+    name: 'TechnoGaming EVO',
+    price: 1200000
+};
+
+var console6 = {
+    name: 'Neo Quant',
+    price: 319990
+};
+
+
+
+function clearCart() {
+    shoppingCart.clearCart();
+}
+
+function addToCart(console) {
+    shoppingCart.addItem(console);
+    shoppingCart.updateCartUI(); 
+}
+function buy() {
+    shoppingCart.buy();
+}
+
+    </script>
+
+
+
+</body>
+</html>

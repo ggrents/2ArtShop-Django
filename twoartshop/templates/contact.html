@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="static\images\apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="static\images\favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="static\images\favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="static\css\styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand p-0" href="/"> 2Art &reg; </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="{% url 'main' %}" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'about' %}">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'pcs' %}">Gaming PCS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'consoles' %}">Gaming Consoles</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="{% url 'contact' %}"
+                  aria-current="page"
+                  >Contact us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="container text-center my-5">
+        <div class="row">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <div class="mb-3">
+              <label for="FormControlInput1" class="form-label"
+                >Here you can share your wishes or small comments about the
+                project</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="FormControlInput1"
+                placeholder="name@email.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="FormControlTextarea1" class="form-label"
+                >Text here</label
+              >
+              <textarea
+                class="form-control"
+                id="FormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="formFile" class="form-label"
+                >If needed - share a screenshot</label
+              >
+              <input class="form-control" type="file" id="formFile" />
+            </div>
+            <button class="btn" id="submitButton">Send</button>
+          </div>
+        </div>
+      <button class="btn mt-5" id="showHiddenButton">
+          Click here to see popular questions.
+        </button>
+        <div id="hiddenDiv">
+          <p class="h4 mt-3">
+            1. Q: Do you sell gaming consoles and accessories? A: Yes, we offer
+            a wide range of gaming consoles like PlayStation, Xbox, and Nintendo
+            Switch, as well as accessories such as controllers, headsets, and
+            charging docks.
+          </p>
+          <p class="h4">
+            2. Q: Can I pre-order upcoming games at this store? A: Yes, you can
+            pre-order upcoming titles to secure your copy. We also offer
+            pre-order bonuses for certain games.
+          </p>
+          <p class="h4">
+            3. Q: Are there any discounts or loyalty programs for regular
+            customers? A: We have a loyalty program that offers discounts,
+            exclusive deals, and early access to sales for our regular
+            customers.
+          </p>
+        </div>
+      </div>
+      <div class="container-fluid mt-4 carousel-c">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div class="row">
+              <div
+                id="carouselExampleIndicators"
+                class="carousel slide"
+                data-bs-ride="true"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="d-block w-100">
+                      <div class="row">
+                        <div class="col-lg-8 col-md-6">
+                          <img
+                            src="static\images\contact.jpg"
+                            class="w-100"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="col-lg-4 col-md-6 slide-text">
+                          <p>
+                            Technical issues lead to frustration and
+                            dissatisfaction among players, which can result in
+                            negative reviews and reduced player retention. Our
+                            technical support team resolve issues quickly and
+                            effectively, improving player satisfaction.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-block w-100">
+                      <div class="row">
+                        <div class="col-lg-8 col-md-6">
+                          <img
+                            src="static\images\contact1.jpg"
+                            class="w-100"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="col-lg-4 col-md-6 slide-text">
+                          <p>
+                            Technical issues can prevent players from making
+                            in-game or future purchases, which can lead to lost
+                            revenue. Our effective technical support can help
+                            resolve issues quickly and minimize revenue loss.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-block w-100">
+                      <div class="row">
+                        <div class="col-lg-8 col-md-6">
+                          <img
+                            src="static\images\contact2.jpg"
+                            class="w-100"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="col-lg-4 col-md-6 slide-text">
+                          <p>
+                            Our technical support team also help by monitoring
+                            and identifying issues and opportunities for
+                            improvement in games and technology. This drives
+                            innovation and improves the overall player
+                            experience, keeping you ahead of the game and
+                            ensuring that you maintain a strong competitive
+                            edge.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-block w-100">
+                      <div class="row">
+                        <div class="col-lg-8 col-md-6">
+                          <img
+                            src="static\images\contact3.jpg"
+                            class="w-100"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="col-lg-4 col-md-6 slide-text">
+                          <p>
+                            Our extensive experience providing gamer-to-gamer
+                            player support spans the last 20 years. We
+                            understand what drives your players, what kind of
+                            help they respond to, and how to speak their
+                            language.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="buttons d-flex justify-content-around">
+                  <button
+                    class="carousel-control-prev btn"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next btn"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 icons">
+            <a href="#" target="_blank"><i class="bx bxl-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="bx bxl-telegram"></i></a>
+            <a href="#" target="_blank"><i class="bx bxl-instagram"></i></a>
+          </div>
+          <div class="col-lg-4 col-md-12 footer-text text-center">
+            <p>All Rights Reserved 2023</p>
+          </div>
+          <div class="col-lg-4 col-md-12 footer-text text-center">
+            <p>
+              Contacts <br />Job <br />
+              Our Team
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="static\js\aboutScript.js"></script>
+  </body>
+</html>

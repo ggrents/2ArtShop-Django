@@ -1,0 +1,141 @@
+{% load static %}
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaming store</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="static\images\apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="static\images\favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="static\images\favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="static\css\styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand p-0" href="/"> 2Art &reg; </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="{% url 'main' %}" class="nav-link active" aria-current="page">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'about' %}">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'pcs' %}">Gaming PCS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'consoles' %}">Gaming Consoles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'consoles' %}">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    {%block main%}
+    <section>
+      <div class="container text-center my-5">
+        <div class="row">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="content-h1">2Art's store</h1>
+            <h2 class="content-h2"><em>High quality gaming products</em></h2>
+            <h3 class="content-h3"><q>From gamers for gamers with love</q></h3>
+            <h4 class="content-h4">
+              Our store specializes in the sale and promotion of
+              <strong>high-quality</strong> devices
+            </h4>
+            <p class="content-p">
+              Detailed information can be found by clicking on the About button
+            </p>
+            <div class="buttons">
+              <a
+                href="{% url 'login' %}"
+                target="_blank"
+                class="btn"
+                id="Login"
+                >Login</a
+              >
+
+              <a
+                href="{% url 'register' %}"
+                target="_blank"
+                class="btn"
+                id="Register"
+                >Register</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <img src="static\images\background.jpg" class="img-fluid" alt="bg" />
+    {%endblock%}
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 icons">
+            <a href="#" target="_blank"><i class="bx bxl-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="bx bxl-telegram"></i></a>
+            <a href="#" target="_blank"><i class="bx bxl-instagram"></i></a>
+          </div>
+          <div class="col-lg-4 col-md-12 footer-text text-center">
+            <p>All Rights Reserved 2023</p>
+          </div>
+          <div class="col-lg-4 col-md-12 footer-text text-center">
+            <p>
+              Contacts <br />Job <br />
+              Our Team
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="static\js\indexScript.js"></script>
+  </body>
+</html>
