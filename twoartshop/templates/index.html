@@ -72,8 +72,9 @@
                 <a class="nav-link" href="{% url 'consoles' %}">Gaming Consoles</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'consoles' %}">Contact us</a>
+                <a class="nav-link" href="{% url 'contact' %}">Contact us</a>
               </li>
+
             </ul>
           </div>
         </div>
@@ -94,23 +95,16 @@
             <p class="content-p">
               Detailed information can be found by clicking on the About button
             </p>
-            <div class="buttons">
-              <a
-                href="{% url 'login' %}"
-                target="_blank"
-                class="btn"
-                id="Login"
-                >Login</a
-              >
+           <div class="buttons">
+    {% if user.is_authenticated %}
+        <a href="{% url 'logout' %}" class="btn" id="Logout">Logout</a>
+    {% else %}
+        <a href="{% url 'login' %}" class="btn" id="Login" target="_blank">Login</a>
+        <a href="{% url 'register' %}" class="btn" id="Register" target="_blank">Register</a>
+    {% endif %}
+</div>
 
-              <a
-                href="{% url 'register' %}"
-                target="_blank"
-                class="btn"
-                id="Register"
-                >Register</a
-              >
-            </div>
+
           </div>
         </div>
       </div>
@@ -126,7 +120,7 @@
             <a href="#" target="_blank"><i class="bx bxl-instagram"></i></a>
           </div>
           <div class="col-lg-4 col-md-12 footer-text text-center">
-            <p>All Rights Reserved 2023</p>
+            <p>&copy; 2023 | 2Art. All rights reserved.</p>
           </div>
           <div class="col-lg-4 col-md-12 footer-text text-center">
             <p>

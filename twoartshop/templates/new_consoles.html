@@ -1,5 +1,4 @@
 {%load static%}
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -61,6 +60,7 @@
 
 
 </head>
+
 <body>
 
  <nav class="navbar navbar-expand-lg navbar-black bg-black">
@@ -306,7 +306,9 @@
             <div class="col-md-4">
 
                 <div id="cart" style="position: fixed; top: 0; right: 0; padding: 10px; background-color: #fff; border: 2px solid #ccc;">
-        <h3>Shopping Basket</h3>
+        <h3>Shopping Basket </h3>
+
+                    <h6>{{user.username}}</h6>
         <ul id="cartItems">
             
         </ul>

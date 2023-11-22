@@ -71,7 +71,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'twoartshop.wsgi.application'
 
-
+LOGOUT_REDIRECT_URL = 'main'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
