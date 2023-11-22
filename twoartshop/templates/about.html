@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{%load static%}
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,19 +11,20 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="static\images\apple-touch-icon.png"
+      href="{% static 'apple-touch-icon.png' %}"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="static\images\favicon-32x32.png"
+       href="{% static 'favicon-32x32.png' %}"
+
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="static\images\favicon-16x16.png"
+      href="{%static 'favicon-16x16.png' %}"
     />
     <link rel="manifest" href="/site.webmanifest" />
     <link
@@ -37,7 +38,7 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="static\css\styles.css" />
+    <link rel="stylesheet" href="{% static 'styles.css' %}" />
   </head>
   <body>
     <header>
@@ -88,7 +89,7 @@
           <div class="col">
             <div class="card">
               <img
-                src="static\images\artemp.jpg"
+                src="{% static 'artemp.jpg' %}"
                 class="card-img-top"
                 alt="..."
               />
@@ -106,7 +107,7 @@
           <div class="col">
             <div class="card">
               <img
-                src="static\images\about.jpg"
+                src="{% static 'about.jpg' %}"
                 class="card-img-top"
                 alt="..."
               />
@@ -133,7 +134,7 @@
           <div class="col">
             <div class="card">
               <img
-                src="static\images\artemg.jpg"
+                src="{% static 'artemg.jpg' %}"
                 class="card-img-top"
                 alt="..."
               />

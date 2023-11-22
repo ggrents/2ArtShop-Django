@@ -12,7 +12,24 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Dosis:wght@500&family=IBM+Plex+Mono&family=Play&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+ <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="{% static 'apple-touch-icon.png' %}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+       href="{% static 'favicon-32x32.png' %}"
 
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="{%static 'favicon-16x16.png' %}"
+    />
 
     <style>
         @keyframes pulse {
@@ -49,7 +66,7 @@
  <nav class="navbar navbar-expand-lg navbar-black bg-black">
     <div class="container">
         <a class="navbar-brand" href="/">
-            <img src="static2/images/2art.png" id="logoimg" style="max-height: 120px;">
+            <img src="{%static '2art.png' %}" id="logoimg" style="max-height: 120px;">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -97,10 +114,10 @@
              16000 MB</p>
                     </div>
                      <div class="card-footer">
-       <button class="btn btn-dark">Buy now</button>
+       <button class="btn btn-dark" onclick="buyNow()">Buy now</button>
             <button class="btn btn-primary" onclick="addToCart(console1)">Add to Basket</button>
             <button class="btn btn-Light" onclick="increaseLikes('console1')">
-    <img src="static2/images/heart.png" alt="Heart" style="width: 20px; height: 15px;">
+    <img src="{% static 'heart.png' %}" alt="Heart" style="width: 20px; height: 15px;">
 </button>
 
   <span id="likeCount_console1">0</span> <span style="font-size: 12px;" id="likeText_console1">Like</span>
@@ -121,10 +138,10 @@
                                 </p>
                     </div>
                      <div class="card-footer">
-          <button class="btn btn-dark">Buy now</button>
+          <button class="btn btn-dark" onclick="buyNow()">Buy now</button>
             <button class="btn btn-primary" onclick="addToCart(console2)">Add to Basket</button>
             <button class="btn btn-Light" onclick="increaseLikes('console2')">
-    <img src="static2/images/heart.png" alt="Heart" style="width: 20px; height: 15px;">
+    <img src= "{% static 'heart.png' %}" alt="Heart" style="width: 20px; height: 15px;">
 </button>
 
   <span id="likeCount_console2">0</span> <span style="font-size: 12px;" id="likeText_console2">Like</span>
@@ -146,10 +163,10 @@
                                 </p>
                     </div>
                      <div class="card-footer">
-           <button class="btn btn-dark">Buy now</button>
+           <button class="btn btn-dark" onclick="buyNow()">Buy now</button>
             <button class="btn btn-primary" onclick="addToCart(console3)">Add to Basket</button>
             <button class="btn btn-Light" onclick="increaseLikes('console3')">
-    <img src="static2/images/heart.png" alt="Heart" style="width: 20px; height: 15px;">
+    <img src="{% static 'heart.png' %}" alt="Heart" style="width: 20px; height: 15px;">
 </button>
 
   <span id="likeCount_console3">0</span> <span style="font-size: 12px;" id="likeText_console3">Like</span>
@@ -174,10 +191,10 @@
                                 </p>
                     </div>
                      <div class="card-footer">
-           <button class="btn btn-dark">Buy now</button>
+           <button class="btn btn-dark" onclick="buyNow()">Buy now</button>
             <button class="btn btn-primary" onclick="addToCart(console4)">Add to Basket</button>
             <button class="btn btn-Light" onclick="increaseLikes('console4')">
-    <img src="static2/images/heart.png" alt="Heart" style="width: 20px; height: 15px;">
+    <img src="{% static 'heart.png' %}" alt="Heart" style="width: 20px; height: 15px;">
 </button>
 
   <span id="likeCount_console4">0</span> <span style="font-size: 12px;" id="likeText_console4">Like</span>
@@ -197,10 +214,10 @@
                                 </p>
                     </div>
                      <div class="card-footer">
-            <button class="btn btn-dark">Buy now</button>
+            <button class="btn btn-dark" onclick="buyNow()">Buy now</button>
             <button class="btn btn-primary" onclick="addToCart(console5)">Add to Basket</button>
             <button class="btn btn-Light" onclick="increaseLikes('console5')">
-    <img src="static2/images/heart.png" alt="Heart" style="width: 20px; height: 15px;">
+    <img src="{% static 'heart.png' %}" alt="Heart" style="width: 20px; height: 15px;">
 </button>
 
   <span id="likeCount_console5">0</span> <span style="font-size: 12px;" id="likeText_console5">Like</span>
@@ -221,10 +238,10 @@
                                 </p>
                     </div>
                      <div class="card-footer">
-            <button class="btn btn-dark">Buy now</button>
+            <button class="btn btn-dark" onclick="buyNow()">Buy now</button>
             <button class="btn btn-primary" onclick="addToCart(console6)">Add to Basket</button>
             <button class="btn btn-Light" onclick="increaseLikes('console6')">
-    <img src="static2/images/heart.png" alt="Heart" style="width: 20px; height: 15px;">
+    <img src="{% static 'heart.png' %}" alt="Heart" style="width: 20px; height: 15px;">
 </button>
 
   <span id="likeCount_console6">0</span> <span style="font-size: 12px;" id="likeText_console6">Like</span>
@@ -249,10 +266,10 @@
                                 </p>
                     </div>
                      <div class="card-footer">
-          <button class="btn btn-dark">Buy now</button>
+          <button class="btn btn-dark" onclick="buyNow()">Buy now</button>
             <button class="btn btn-primary" onclick="addToCart(console7)">Add to Basket</button>
             <button class="btn btn-Light" onclick="increaseLikes('console7')">
-    <img src="static2/images/heart.png" alt="Heart" style="width: 20px; height: 15px;">
+    <img src="{% static 'heart.png' %}" alt="Heart" style="width: 20px; height: 15px;">
 </button>
 
   <span id="likeCount_console7">0</span> <span style="font-size: 12px;" id="likeText_console7">Like</span>
@@ -274,11 +291,11 @@
          Graphics
                     </div>
                      <div class="card-footer">
-            <button class="btn btn-dark">Buy now</button>
+            <button class="btn btn-dark" onclick="buyNow()">Buy now</button>
             <button class="btn btn-primary" onclick="addToCart(console8)">Add to Basket</button>
         
             <button class="btn btn-Light" onclick="increaseLikes('console8')">
-    <img src="static2/images/heart.png" alt="Heart" style="width: 20px; height: 15px;">
+    <img src= "{% static 'heart.png' %}" alt="Heart" style="width: 20px; height: 15px;">
 </button>
 
   <span id="likeCount_console8">0</span> <span style="font-size: 12px;" id="likeText_console8">Like</span>
@@ -298,7 +315,8 @@
          <button class="btn btn-danger" onclick="clearCart()">Clear Basket</button>
          <button class="btn btn-success" onclick="buy()">Make a purchase</button>
     </div>
-           
+
+
     </main>
 
    
@@ -353,51 +371,71 @@
         
         setInterval(changeText, 2000);
     </script>
+ <script>
+     function buyNow() {
+     alert('You have successfully made a purchase!');
+     }
+ </script>
 
-    <script>
-       var shoppingCart = {
-    items: [],
-    total: 0,
+<script>
+    var shoppingCart = {
+        items: [],
+        total: 0,
 
-    addItem: function(item) {
-        this.items.push(item);
-        this.calculateTotal();
-        this.updateCartUI();
-    },
+        addItem: function(item) {
+            this.items.push(item);
+            this.calculateTotal();
+            this.updateCartUI();
+        },
 
-    buy: function() {
-        
-        this.clearCart();
+        buy: function() {
+            this.clearCart();
+            alert('You have successfully made a purchase!');
+        },
 
-        
-        alert('You have successfully made a purchase!');
-    },
+        calculateTotal: function() {
+            this.total = this.items.reduce((acc, item) => acc + item.price, 0);
+        },
 
-    calculateTotal: function() {
-        this.total = this.items.reduce((acc, item) => acc + item.price, 0);
-    },
+        updateCartUI: function() {
+            var cartItemsElement = document.getElementById('cartItems');
+            var totalPriceElement = document.getElementById('totalPrice');
 
-    updateCartUI: function() {
-        var cartItemsElement = document.getElementById('cartItems');
-        var totalPriceElement = document.getElementById('totalPrice');
+            cartItemsElement.innerHTML = "";
+            this.items.forEach((item, index) => {
+                var li = document.createElement('li');
+                li.textContent = item.name + ": " + item.price + " ₸";
 
-        cartItemsElement.innerHTML = "";
-        this.items.forEach(item => {
-            var li = document.createElement('li');
-            li.textContent = item.name + ": " + item.price + " ₸";
-            cartItemsElement.appendChild(li);
-        });
+                var removeButton = document.createElement('button');
+                removeButton.textContent = 'X';
+                removeButton.classList.add('btn', 'btn-danger', 'btn-sm' ,'small-button');
 
-        totalPriceElement.textContent = this.total + " ₸";
-    },
-    clearCart: function() {
-        this.items = [];
-        this.total = 0;
-        this.updateCartUI();
-    }
-};
+                removeButton.onclick = function() {
+                    shoppingCart.removeItem(index);
+                };
 
-var console1 = {
+                li.appendChild(removeButton);
+                cartItemsElement.appendChild(li);
+            });
+
+            totalPriceElement.textContent = this.total + " ₸ ";
+        },
+
+        clearCart: function() {
+            this.items = [];
+            this.total = 0;
+            this.updateCartUI();
+        },
+
+
+        removeItem: function(index) {
+            this.items.splice(index, 1);
+            this.calculateTotal();
+            this.updateCartUI();
+        }
+    };
+
+    var console1 = {
     name: 'Sony PS 5',
     price: 364990
 };
@@ -409,17 +447,17 @@ var console2 = {
 
 var console3 = {
     name: 'Xbox Series X',
-    price: 279900 
+    price: 279900
 };
 
 var console4 = {
     name: 'Valve Steam',
-    price: 319899 
+    price: 319899
 };
 
 var console5 = {
     name: 'Centechia X6',
-    price: 15000 
+    price: 15000
 };
 
 var console6 = {
@@ -434,26 +472,22 @@ var console7 = {
 
 var console8 = {
     name: 'ASUS ROG Ally',
-    price: 395000 
+    price: 395000
 };
 
 
+    function clearCart() {
+        shoppingCart.clearCart();
+    }
 
-function clearCart() {
-    shoppingCart.clearCart();
-}
+    function addToCart(console) {
+        shoppingCart.addItem(console);
+    }
 
-function addToCart(console) {
-    shoppingCart.addItem(console);
-    shoppingCart.updateCartUI(); 
-}
-function buy() {
-    shoppingCart.buy();
-}
-
-    </script>
-
-
+    function buy() {
+        shoppingCart.buy();
+    }
+</script>
 
 </body>
 </html>

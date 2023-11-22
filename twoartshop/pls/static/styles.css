@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat&family=Poppins:ital,wght@0,400;1,100&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Indie Flower", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #ff0000 0%, #000000 10%);
+  color: #ededed;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.navbar a {
+  font-size: 19px;
+  font-weight: bold;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 105px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #000000;
+}
+
+.card {
+  background: #000000;
+  color: #e0e0e0;
+  border: solid;
+  border-color: #ea4135;
+  border-width: 0.5px;
+}
+
+.btn {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100%;
+  background: #ea4135;
+  border: 2px solid #ea4135;
+  border-radius: 8px;
+  font-size: 19px;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  color: #ea4135;
+  border-color: #ea4135;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  animation: showRight 1s ease forwards;
+  animation-delay: 1.9s;
+  z-index: 2;
+}
+
+.row {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-text {
+  font-size: 24px;
+  color: #e0e0e0;
+  margin: auto auto;
+}
+
+footer {
+  background: #000000;
+}
+
+.icons {
+  margin-left: 50px;
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  animation: showRight 1s ease forwards;
+  animation-delay: 2.5s;
+  z-index: 2;
+}
+
+.icons a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #ea4135;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #ea4135;
+  text-decoration: none;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.icons a:hover {
+  color: #000000;
+}
+
+.icons a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ea4135;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.icons a:hover::before {
+  width: 100%;
+}
+
+.content-p {
+  color: #ea4135;
+}
+
+small {
+  color: gray;
+}
+
+.content-h1 {
+  position: relative;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #ea4135;
+}
+
+.content-h2 {
+  position: relative;
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.content-h3 {
+  position: relative;
+  font-size: 32px;
+  font-weight: 700;
+  color: #ea4135;
+}
+
+.content-h4 {
+  position: relative;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+col p {
+  position: relative;
+  font-size: 18px;
+  margin: 20px 0 40px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-control {
+  background-color: #ccc;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 8px 0 rgba(235, 2, 2, 0.672);
+  margin: 8px;
+}
+
+.img-fluid {
+  box-shadow: 0 4px 8px 0 rgba(235, 2, 2, 0.672);
+  margin: 8px;
+}
+
+.form-control:hover,
+.form-control:active {
+  background-color: #ededed;
+  transition: 1s;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(235, 2, 2, 0.672);
+  margin: 8px;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  animation: showRight 1s ease forwards;
+  animation-delay: 1.65s;
+}
+
+.container {
+  padding: 0 16px;
+  text-align: center;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  animation: showRight 1s ease forwards;
+  animation-delay: 1.65s;
+}
+
+#hiddenDiv {
+  display: none;
+}
+
+#slider {
+  overflow: hidden;
+}
+
+#image-container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-c {
+  background-color: #000000;
+}
+
+/* KEYFRAMES ANIMATION  */
+@keyframes showRight {
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes manipActiveHover {
+  100% {
+    pointer-events: auto;
+  }
+}
