@@ -8,7 +8,7 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-   <link
+    <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="{% static 'apple-touch-icon.png' %}"
@@ -17,8 +17,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-       href="{% static 'favicon-32x32.png' %}"
-
+      href="{% static 'favicon-32x32.png' %}"
     />
     <link
       rel="icon"
@@ -68,7 +67,9 @@
                 <a class="nav-link" href="{% url 'pcs' %}">Gaming PCS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'consoles' %}">Gaming Consoles</a>
+                <a class="nav-link" href="{% url 'consoles' %}"
+                  >Gaming Consoles</a
+                >
               </li>
               <li class="nav-item">
                 <a
@@ -118,7 +119,7 @@
             <button class="btn" id="submitButton">Send</button>
           </div>
         </div>
-      <button class="btn mt-5" id="showHiddenButton" style = "height:200px;">
+        <button class="btn mt-5" id="showHiddenButton" style="height: 100px">
           Click here to see popular questions.
         </button>
         <div id="hiddenDiv">
@@ -154,14 +155,24 @@
                   <div class="carousel-item active">
                     <div class="d-block w-100">
                       <div class="row">
-                        <div class="col-lg-8 col-md-6">
+                        <div class="col-lg-12">
                           <img
                             src="{% static 'contact.jpg' %}"
                             class="w-100"
                             alt="..."
+                            style="opacity: 0.35"
                           />
+                          <div class="carousel-caption d-none d-md-block">
+                            <p class="h2">
+                              Technical issues lead to frustration and
+                              dissatisfaction among players, which can result in
+                              negative reviews and reduced player retention. Our
+                              technical support team resolve issues quickly and
+                              effectively, improving player satisfaction.
+                            </p>
+                          </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 slide-text">
+                        <!-- <div class="col-lg-4 col-md-6 slide-text">
                           <p>
                             Technical issues lead to frustration and
                             dissatisfaction among players, which can result in
@@ -169,42 +180,64 @@
                             technical support team resolve issues quickly and
                             effectively, improving player satisfaction.
                           </p>
-                        </div>
+                        </div> -->
                       </div>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <div class="d-block w-100">
                       <div class="row">
-                        <div class="col-lg-8 col-md-6">
+                        <div class="col-lg-12">
                           <img
                             src="{% static 'contact1.jpg' %}"
                             class="w-100"
                             alt="..."
+                            style="opacity: 0.35"
                           />
+                          <div class="carousel-caption d-none d-md-block">
+                            <p class="h2">
+                              Technical issues can prevent players from making
+                              in-game or future purchases, which can lead to
+                              lost revenue. Our effective technical support can
+                              help resolve issues quickly and minimize revenue
+                              loss.
+                            </p>
+                          </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 slide-text">
+                        <!-- <div class="col-lg-4 col-md-6 slide-text">
                           <p>
                             Technical issues can prevent players from making
                             in-game or future purchases, which can lead to lost
                             revenue. Our effective technical support can help
                             resolve issues quickly and minimize revenue loss.
                           </p>
-                        </div>
+                        </div> -->
                       </div>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <div class="d-block w-100">
                       <div class="row">
-                        <div class="col-lg-8 col-md-6">
+                        <div class="col-lg-12">
                           <img
                             src="{% static 'contact2.jpg' %}"
                             class="w-100"
                             alt="..."
+                            style="opacity: 0.35"
                           />
+                          <div class="carousel-caption d-none d-md-block">
+                            <p class="h2">
+                              Our technical support team also help by monitoring
+                              and identifying issues and opportunities for
+                              improvement in games and technology. This drives
+                              innovation and improves the overall player
+                              experience, keeping you ahead of the game and
+                              ensuring that you maintain a strong competitive
+                              edge.
+                            </p>
+                          </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 slide-text">
+                        <!-- <div class="col-lg-4 col-md-6 slide-text">
                           <p>
                             Our technical support team also help by monitoring
                             and identifying issues and opportunities for
@@ -214,21 +247,31 @@
                             ensuring that you maintain a strong competitive
                             edge.
                           </p>
-                        </div>
+                        </div> -->
                       </div>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <div class="d-block w-100">
                       <div class="row">
-                        <div class="col-lg-8 col-md-6">
+                        <div class="col-lg-12">
                           <img
                             src="{% static 'contact3.jpg' %}"
                             class="w-100"
                             alt="..."
+                            style="opacity: 0.35"
                           />
+                          <div class="carousel-caption d-none d-md-block">
+                            <p class="h2">
+                              Our extensive experience providing gamer-to-gamer
+                              player support spans the last 20 years. We
+                              understand what drives your players, what kind of
+                              help they respond to, and how to speak their
+                              language.
+                            </p>
+                          </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 slide-text">
+                        <!-- <div class="col-lg-4 col-md-6 slide-text">
                           <p>
                             Our extensive experience providing gamer-to-gamer
                             player support spans the last 20 years. We
@@ -236,7 +279,7 @@
                             help they respond to, and how to speak their
                             language.
                           </p>
-                        </div>
+                        </div> -->
                       </div>
                     </div>
                   </div>
